@@ -33,12 +33,16 @@ JW Player API Downloader is a Python command-line tool for downloading audio and
 
 ## Installation
 
-### Recommended: Virtual Environment Installation
+### Recommended: Clone from GitHub (Virtual Environment)
 
 It's highly recommended to install this script in a virtual environment to avoid dependency conflicts:
 
 #### On Linux/macOS:
 ```bash
+# Clone the repository
+git clone https://github.com/PeerHoffmann/jwplayer_api_downloader.git
+cd jwplayer_api_downloader
+
 # Create virtual environment
 python3 -m venv jwplayer-downloader-env
 
@@ -47,14 +51,14 @@ source jwplayer-downloader-env/bin/activate
 
 # Install dependencies
 pip install requests
-
-# Download the script
-wget <script-url>/jwplayer_api_downloader.py
-# or copy the jwplayer_api_downloader.py file to this directory
 ```
 
 #### On Windows:
 ```cmd
+# Clone the repository
+git clone https://github.com/PeerHoffmann/jwplayer_api_downloader.git
+cd jwplayer_api_downloader
+
 # Create virtual environment
 python -m venv jwplayer-downloader-env
 
@@ -63,8 +67,6 @@ jwplayer-downloader-env\Scripts\activate
 
 # Install dependencies
 pip install requests
-
-# Download or copy the jwplayer_api_downloader.py file to this directory
 ```
 
 #### Using the Virtual Environment:
@@ -81,13 +83,27 @@ python jwplayer_api_downloader.py --help
 deactivate
 ```
 
-### Alternative: System-wide Installation
+### Alternative: Download Single File
 ```bash
-# Install dependencies system-wide (not recommended)
-pip install requests
+# Create directory and download just the script file
+mkdir jwplayer_api_downloader
+cd jwplayer_api_downloader
 
-# Download the script
-wget <script-url>/jwplayer_api_downloader.py
+# Download the script directly from GitHub
+wget https://raw.githubusercontent.com/PeerHoffmann/jwplayer_api_downloader/main/jwplayer_api_downloader.py
+
+# Install dependencies (consider using virtual environment)
+pip install requests
+```
+
+### Alternative: System-wide Installation (Not Recommended)
+```bash
+# Clone repository
+git clone https://github.com/PeerHoffmann/jwplayer_api_downloader.git
+cd jwplayer_api_downloader
+
+# Install dependencies system-wide
+pip install requests
 ```
 
 ### Verification

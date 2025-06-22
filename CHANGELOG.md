@@ -7,15 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2025-06-22
+
 ### Added
 - Comprehensive README.md with installation, usage, and configuration instructions
 - Virtual environment installation instructions for better dependency management
 - Structured TODO.md task management system
 - English translations for all German text in codebase
+- GitHub clone installation method (recommended)
+- Direct single file download option from GitHub raw URL
 
 ### Changed
 - Improved code documentation and comments
 - Standardized Markdown formatting across all documentation
+- Updated README.md installation section with GitHub repository options
+- Restructured installation alternatives for better clarity
 
 ### Security
 - Sanitized all sensitive information in configuration examples
