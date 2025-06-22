@@ -40,8 +40,8 @@ It's highly recommended to install this script in a virtual environment to avoid
 #### On Linux/macOS:
 ```bash
 # Clone the repository
-git clone https://github.com/PeerHoffmann/jwplayer_api_downloader.git
-cd jwplayer_api_downloader
+git clone https://github.com/PeerHoffmann/jw_player_api_downloader.git
+cd jw_player_api_downloader
 
 # Create virtual environment
 python3 -m venv jwplayer-downloader-env
@@ -56,8 +56,8 @@ pip install requests
 #### On Windows:
 ```cmd
 # Clone the repository
-git clone https://github.com/PeerHoffmann/jwplayer_api_downloader.git
-cd jwplayer_api_downloader
+git clone https://github.com/PeerHoffmann/jw_player_api_downloader.git
+cd jw_player_api_downloader
 
 # Create virtual environment
 python -m venv jwplayer-downloader-env
@@ -77,7 +77,7 @@ source jwplayer-downloader-env/bin/activate  # Linux/macOS
 jwplayer-downloader-env\Scripts\activate     # Windows
 
 # Run the script
-python jwplayer_api_downloader.py --help
+python jw_player_api_downloader.py --help
 
 # When done, deactivate the virtual environment
 deactivate
@@ -86,11 +86,11 @@ deactivate
 ### Alternative: Download Single File
 ```bash
 # Create directory and download just the script file
-mkdir jwplayer_api_downloader
-cd jwplayer_api_downloader
+mkdir jw_player_api_downloader
+cd jw_player_api_downloader
 
 # Download the script directly from GitHub
-wget https://raw.githubusercontent.com/PeerHoffmann/jwplayer_api_downloader/main/jwplayer_api_downloader.py
+wget https://raw.githubusercontent.com/PeerHoffmann/jw_player_api_downloader/main/jw_player_api_downloader.py
 
 # Install dependencies (consider using virtual environment)
 pip install requests
@@ -99,8 +99,8 @@ pip install requests
 ### Alternative: System-wide Installation (Not Recommended)
 ```bash
 # Clone repository
-git clone https://github.com/PeerHoffmann/jwplayer_api_downloader.git
-cd jwplayer_api_downloader
+git clone https://github.com/PeerHoffmann/jw_player_api_downloader.git
+cd jw_player_api_downloader
 
 # Install dependencies system-wide
 pip install requests
@@ -109,7 +109,7 @@ pip install requests
 ### Verification
 Test the installation:
 ```bash
-python jwplayer_api_downloader.py --help
+python jw_player_api_downloader.py --help
 ```
 
 ## Configuration
@@ -149,34 +149,34 @@ JW_DOWNLOAD_DIR=./downloads
 
 #### Download all audio files:
 ```bash
-python jwplayer_api_downloader.py --api-secret YOUR_API_SECRET --site-id YOUR_SITE_ID
+python jw_player_api_downloader.py --api-secret YOUR_API_SECRET --site-id YOUR_SITE_ID
 ```
 
 #### Download all video files:
 ```bash
-python jwplayer_api_downloader.py --api-secret YOUR_API_SECRET --site-id YOUR_SITE_ID --type video
+python jw_player_api_downloader.py --api-secret YOUR_API_SECRET --site-id YOUR_SITE_ID --type video
 ```
 
 #### Download both audio and video:
 ```bash
-python jwplayer_api_downloader.py --api-secret YOUR_API_SECRET --site-id YOUR_SITE_ID --type both
+python jw_player_api_downloader.py --api-secret YOUR_API_SECRET --site-id YOUR_SITE_ID --type both
 ```
 
 ### Advanced Usage
 
 #### Custom download directory:
 ```bash
-python jwplayer_api_downloader.py --download-dir /path/to/downloads --type audio
+python jw_player_api_downloader.py --download-dir /path/to/downloads --type audio
 ```
 
 #### Export metadata only:
 ```bash
-python jwplayer_api_downloader.py --export-metadata
+python jw_player_api_downloader.py --export-metadata
 ```
 
 #### Force re-download existing files:
 ```bash
-python jwplayer_api_downloader.py --skip-existing false
+python jw_player_api_downloader.py --skip-existing false
 ```
 
 ### Command-Line Options

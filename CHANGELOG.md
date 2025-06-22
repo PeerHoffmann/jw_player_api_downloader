@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] - 2025-06-22
+
+### Changed
+- Renamed script file from `jwplayer_api_downloader.py` to `jw_player_api_downloader.py`
+- Updated all repository URLs in README.md to match new GitHub repository name
+- Updated all script filename references in documentation
+
 ## [1.1.0] - 2025-06-22
 
 ### Added
